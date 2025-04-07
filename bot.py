@@ -61,7 +61,7 @@ async def get_phone(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
 
     # Отправка тебе в канал
-    channel_id = "@YOUR_CHANNEL_NAME"  # <-- ЗАМЕНИ на свой канал
+    channel_id = "t.me/Perevoz_spb" 
     await context.bot.send_message(chat_id=channel_id, text=msg, parse_mode='Markdown')
 
     await update.message.reply_text("Спасибо! Ваша заявка принята.")
